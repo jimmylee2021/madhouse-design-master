@@ -1,0 +1,530 @@
+:root {
+    --primary-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s all linear;
+    font-family: Break;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background: #000;
+
+}
+#menu-bar{
+    font-size: 30px;
+    padding:.8rem 1.5rem;
+    color:#fff;
+    cursor:pointer;
+    display: none;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top:0;left:0;right: 0;
+    z-index: 10000;
+    padding: 20px 20px;
+    color:#fff;
+}
+header .nav-bar li{
+  display: inline-block;
+  padding: 20px 20px;
+}
+header .nav-bar li a{
+    margin: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+header.sticky{
+    padding: 20px 20px;
+	width: 100%;
+	margin: 0px;
+	background:#000;
+	position: fixed;
+}
+.logo{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+
+
+
+
+
+.banner{
+    background: url(../img/mad1.png);
+    background-size: cover;
+    height:1251px;
+	left: 276px;
+	position: relative;
+	background-position: center;
+	width: 889px;
+	top: -113px;
+	background-blend-mode:screen;
+
+}
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-left,
+.text-right{
+    color: var(--primary-color);
+    margin-top: 400px;
+    font-size: 50px;
+    line-height: 113.6px;
+}
+.text-left {
+    float: left;
+    margin-left: -110px;
+}
+.text-right{
+    float: right;
+    margin-left:auto ;
+    margin-right: -80px;
+}
+.about-us{
+    margin-top: -100px;
+    margin-left: 50px;
+    
+}
+.heading{
+    font-size: 50px;
+    color:var(--primary-color);
+}
+.btn{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 30px;
+    border: 2px dashed #fff;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.lorem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:var(--primary-color);
+    width:570px;
+    align-items: flex-start;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.gallery{
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+ .heading-2{
+    text-align: end;
+    font-size: 50px;
+    color: var(--primary-color);
+    margin-right: 50px;
+    
+}
+.gallery p{
+    color: var(--primary-color);
+    text-align: end;
+    margin-right: 50px;
+    font-size: 30px;
+}
+.img{
+    max-width: 100%;
+}
+.img img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.line-1{
+    display: flex;
+}
+.line-1 .btn{
+    margin-top: -30px;
+    margin-left: 0;
+}
+.line{
+    display: flex;
+	transform: rotate(180deg);
+	height: 0px;
+	border: 2px dashed #828282;
+    width: 62%;
+}
+.exhibit{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-top: 100px;
+    text-align: end;
+    float: right;
+    margin-right: 50px;
+    font-style: italic;
+    color: #828282;
+    font-family: Roboto;
+    font-weight: bold;
+}
+.ext span{
+    font-family: Roboto;
+    color: grey;
+}
+.ext p{
+    font-size: 20px;
+    font-size: bold;
+    font-family: Roboto;
+}
+.ext h2{
+    font-size: bold;
+    font-family: Roboto;
+}
+.ext h1{
+    font-size: bold;
+    font-family: Roboto;
+}
+.desc{
+    margin-top: 200px;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-left: 50px;
+}
+.desc span{
+    font-size: 40px;
+}
+.desc h1{
+    font-size: 80px;
+}
+.desc h2{
+    font-size: 60px;
+}
+.line-2{
+    display: flex;
+	transform: rotate(180deg);
+	height: 0px;
+	border: 2px dashed #828282;
+    width: 40%;
+}
+.row{
+    margin-top: 100px;
+}
+.col{
+    float: right;
+    margin-right: 50px;
+    margin-top: -20px;
+    text-align: end;
+}
+.date{
+    color: var(--primary-color);   
+}
+.date span{
+    font-size: 30px;
+    font-family: Roboto;
+    color: #828282;
+}
+.date p{
+    font-size: 50px;
+}
+.artiste{
+    margin-top: 300px;
+}
+.artiste h1{
+    color: var(--primary-color);
+    margin-left: 50px;
+    font-size: 50px;
+}
+.img-2 img{
+     max-width: 80%;
+     object-fit: cover;
+     position: relative;
+     margin-left: 100px;
+}
+
+.ext-2{
+    margin-top: 100px;
+	width: 100%;
+	background: url(../img/ext2.png);
+	background-size: cover;
+	width: 1519px;
+     height: 466px;
+      left: 2px;
+      top: 5898px;
+      object-fit: cover;
+	flex-wrap: wrap;
+	background-blend-mode:screen;
+}
+.artiste-btn{
+    display: flex;
+    justify-content: center;
+}
+.ext-left {
+    color: #fff;
+    float: right;
+    margin-top: 80px;
+    margin-right: 100px;
+}
+.ext-left h1 {
+    font-size: 60px;
+}
+.ext-left p {
+    font-size: 30px;
+    color: grey;
+    margin-top: 20px;
+}
+.ext-btn {
+    margin-left: -20px;
+}
+
+footer {
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+}
+footer .logo {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.design  {
+    margin-top: 100px;
+    color: grey;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+.design a,
+p{
+    color: #828282;
+    font-family: Roboto;
+    margin-bottom: 40px;
+}
+
+@media  (max-width: 991px) {
+    .banner{
+        background-position: center;
+        position: relative;
+        left: 30px;
+        height: 100vh;
+        width: 90vw;
+    }
+    header{
+       background: #000;
+    }
+    #menu-bar{
+        display: initial;
+    }
+    header .nav-bar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background:#000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    border-top: 2px solid #000;
+    padding: 1rem 0;
+    font-size: 3rem;
+    display: none;
+ }
+ header .nav-bar.active{
+    display: block;
+}	
+header .nav-bar li{
+    font-size: 2.5rem;
+    display: block;
+    justify-content: left;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+header .nav-bar li a{
+    color:var(--primary-color);
+}
+.design{
+    font-size: 15px;
+}
+   
+    .dashed{
+        display: none;
+    }
+
+    .ext {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+   
+.ext-left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+}
+.ext-left h1{
+    font-size: 25px;
+}
+.ext-left p {
+    font-size: 15px;
+}
+ .text-left,
+ .text-right{
+     font-size: 20px;
+     line-height: 30.6px;
+ }
+ .text-left{
+     margin-left: 20px;
+    
+ }
+ .text-right{
+     margin-right: -10px;
+     margin-top: -0.7px;
+ }
+ .text{
+     flex-direction: column;
+ }
+ .line-1 .btn{
+    margin-top: -20px;
+    margin-left: 0;
+    font-size: 25px;
+}
+.line{
+    width: 350px;
+}
+.ext{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.desc{
+    margin-left: 30px;
+    margin-bottom: -30px;
+    font-size: 20px;
+
+}
+.desc h1{
+    font-size: 40px;
+}
+.row .btn{
+    font-size: 25px;
+}
+.line-2{
+    width:250px;
+}
+.date p{
+    font-size: 20px;
+}
+.date span{
+    font-size: 15px;
+}
+
+.col{
+    margin-top: 30px;
+}
+.artiste h1{
+    font-size: 30px;
+}
+.img-2 img{
+   
+    margin-left: 50px;
+    max-width: 90%;
+    object-fit: cover;
+}
+.artiste-btn {
+    margin-top: -20px;
+}
+
+
+.ext-2{
+    margin-top: 50px;
+    background-position: center;
+    height: 50vh;
+    width: 100vw;
+}
+.ext-btn {
+    font-size: 20px;
+}
+.ext-left h1 {
+    font-size: 30px;
+}
+
+@media (max-width:500px) {
+    .text-right {
+        margin-right: 30px;
+    }
+    .text-left{
+        margin-left: 10px;
+    }
+    .about-us{
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .lorem{
+        width:250px;
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .gallery p{
+        font-size: 20px;
+    }
+    .artiste .btn{
+        transform: translateX(-2%);
+        margin: 20%;
+        font-size: 15px;
+    }
+    .line{
+        width: 200px;
+    }
+    .line-1 .btn{
+        font-size: 15px;
+    }
+    .line-2{
+        width: 60px;
+    }
+    .img-2 img{
+        margin: auto;
+        margin-left: 15px;
+    }
+    .artiste-btn {
+        margin-left: -10px;
+    }
+}
+    
+
+}
+
+@media(max-width:450px) {
+    .ext-2 h1 {
+         font-size: 20px;
+    }
+}
+
+@media(max-width:280px) {
+      .line-1 .line {
+          width: 30px;
+      }
+      .ext-2  {
+          width: 100vw;
+      }
+      footer .logo {
+          display: none;
+      }
+      footer .design {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+}
+
+
+    
+

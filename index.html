@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/mad.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">The<br> Madhouse <br>Studio</a>
+            <nav class="nav-bar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">ContactUs</a></li>
+                <li><a href="#studio">Studio</a></li>
+            </nav>
+            <div  id="menu-bar"class="fas fa-bars"></div>
+        </header>
+        <main>
+     <section class="banner" id="home">
+          <div class="text">
+              <div class="text-left">
+                 <h1>Trapping <br>Into Still</h1>
+              </div>
+              <div class="text-right">
+                 <h1>Moments<br>Memories</h1> 
+            </div>
+          </div>
+    </section>
+    <section class="about-us" id="about">
+        <h1 class="heading">
+            About Us
+        </h1>
+        <div class="lorem">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque illum nam, nulla labore consequatur, culpa, eligendi amet dolores nobis sit sint? Possimus modi nostrum libero deserunt voluptatem facilis illum.</p>
+        </div>
+        <div class="lorem">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque illum nam, nulla labore consequatur, culpa, eligendi amet dolores nobis sit sint? Possimus modi nostrum libero deserunt voluptatem facilis illum.</p>
+        </div>
+        <a href="#" class="btn">Read More</a>
+       
+
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h1 class="heading-2">Gallery</h1>
+        <p>some of our finest traped memories</p>
+         <div class="img">
+             <img src="img/mad2.png">
+         </div>
+         <div class="line-1">
+             <div class="line">
+             </div>
+             <a href="#" class="btn">View More</a>
+         </div>
+        
+    </section>
+
+    <div class="exhibit">
+          <div class="ext">
+              <span>witness chaos in real time</span>
+              <p>A gathering of sane Madmen</p>
+              <h2>unveiling madness in a beautiful way</h2>
+              <h1>Be Mad Be Free</h1>
+          </div>
+        </div>
+
+        <div class="desc">
+             <span>The</span>
+             <h1>Mad House</h1>
+             <h2>Exhibit 1.0</h2>
+        </div>
+    <div class="row">
+        <div class="line-1">
+            <div class="line-2">
+            </div>
+            <a href="" class="btn">Reserve your seat</a>
+         </div>
+    </div>
+   <div class="col" id="studio">
+        <div class="date">
+        <span>Date:</span>
+        <p>December 29th</p>
+    </div>
+    <div class="date">
+        <span>Time:</span>
+        <p>Before The Dawn</p>
+    </div>
+    <div class="date">
+        <span>Venue:</span>
+        <p>Madhouse Asylum</p>
+    </div>
+   </div>
+
+   <section class="artiste" id="studio">
+       <h1>Exhibiting Artiste</h1>
+       <div class="img-2">
+        <img src="img/ext.png">
+       </div>
+       <div class="artiste-btn">
+        <a href="" class="btn">Reserve Your seat now</a>
+       </div>
+    </div>
+   </section>
+  
+   <section class="ext-2" id="contact">
+        <div class="ext-left">
+            <h1>let us capture your<br>next moments for you</h1>
+
+            <p>Beautiful Memories. Pixel Perfet</p>
+
+            <div class="ext-btn">
+                <a href="" class="btn">Workwithmadhousestudio</a>
+            </div>
+        </div>
+   </section>
+    
+    <footer>
+        <a href="#" class="logo">The<br> Madhouse <br>Studio</a>
+
+        <div class="design">
+            <a href="#">Copyright 2022</a>
+            <p>Built by Jimmy Jimmy</p>
+        </div>
+    </footer>
+      
+</main>
+     
+        
+      
+    </body>
+    <script>
+       	window.addEventListener("scroll", function(){
+		var header = document.querySelector("header")
+		header.classList.toggle("sticky", window.scrollY > 0)
+	});
+
+    let menu = document.querySelector('#menu-bar');
+	let navbar = document.querySelector('.nav-bar');
+
+	menu.addEventListener('click', () =>{
+		menu.classList.toggle('fa-times');
+		navbar.classList.toggle('active')
+
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+
+        }
+			
+	});
+
+    </script>
+</html>
